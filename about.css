@@ -1,0 +1,137 @@
+/* body {
+
+    background: radial-gradient(circle, rgb(228, 228, 228) 0%, rgb(233, 232, 232) 100%);
+} */
+.curve img {
+    display: none;
+}
+
+.curve-container {
+    background: #fff;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.strategic-container,
+.about-container,
+.about-arrangement-container,
+.about-research-container,
+.about-tourism-container {
+    background-color: #fff;
+}
+
+.strategic-container h4,
+.about-resource-container h4,
+.about-arrangement-container h4,
+.about-research-container h4,
+.about-tourism-container h4 {
+    background-color: #289F00;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.strategic-container p,
+.about-resource-container p,
+.about-arrangement-container p,
+.about-research-container p,
+.about-tourism-container p {
+    padding: .5rem 2rem;
+    color: #5f5f5f;
+}
+
+.fa-angle-right {
+    color: #289F00;
+    padding: 0 .5rem;
+}
+
+@media(min-width:1000px) {
+    .curve img {
+        display: block;
+    }
+
+
+
+    .strategic-container,
+    .about-container,
+    .about-arrangement-container,
+    .about-research-container,
+    .about-tourism-container {
+        background: none;
+    }
+
+    .about-container {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, [col] 1fr);
+        grid-template-rows: repeat(5, [row] auto);
+        grid-gap: 10px;
+    }
+
+    .strategic-container {
+        grid-column: col / span 6;
+        grid-row: row;
+    }
+
+    .about-resource-container {
+        grid-column: col 7/ span 6;
+        grid-row: row;
+    }
+
+    .about-arrangement-container {
+        grid-column: col / span 6;
+        grid-row: row 2;
+    }
+
+    .about-research-container {
+        grid-column: col 7/ span 6;
+        grid-row: 2;
+    }
+
+    .about-tourism-container {
+        grid-column: col / span 12;
+        grid-row: 3;
+    }
+
+    .strategic-container p,
+    .about-resource-container p,
+    .about-arrangement-container p,
+    .about-research-container p,
+    .about-tourism-container p {
+        background-color: #fff;
+    }
+
+    .strategic-container p {
+        height: 87%;
+    }
+
+
+    .divider {
+        display: flex;
+        background-color: #fff;
+    }
+
+    .social {
+        bottom: -65%;
+        right: 22%;
+    }
+
+    .main-footer {
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:1025px) {
+    .social {
+        bottom: -125%;
+        right: 25.5%;
+    }
+
+    .strategic-container p {
+        height: 83.5%;
+    }
+}
